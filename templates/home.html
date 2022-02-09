@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home page</title>
-    <style>
-        h1 { color: red;}
-    </style>
+    <title>Home Page</title>
 </head>
 <body>
-<h1>HELLO {{ name }}</h1>
+<h1>Login Form</h1>
+<form action="/" method="post">
+    <input type="text" name="username" placeholder="username"> <br/>
+    <input type="password" name="password" placeholder="password"><br/>
+    <button type="submit">Login</button>
+</form>
+{{ error }}
 </body>
 </html>
